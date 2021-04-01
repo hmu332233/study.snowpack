@@ -8,6 +8,14 @@ module.exports = {
   devOptions: {
     port: 1234, // 개발 서버를 실행할 포트 번호
   },
+  plugins: [
+    [
+      '@snowpack/plugin-sass',
+      {
+        /* see options below */
+      },
+    ],
+  ],
   // buildOptions: {
   //   // out: 'build', // 최종 빌드를 출력하는 로컬 디렉토리 이름
   //   // baseUrl: '/', // 제품 모드의 기본 URL 지정, 현재 앱이 하위 디렉토리로 배포되는 경우 유용
