@@ -9,12 +9,8 @@ module.exports = {
     port: 1234, // 개발 서버를 실행할 포트 번호
   },
   plugins: [
-    [
-      '@snowpack/plugin-sass',
-      {
-        /* see options below */
-      },
-    ],
+    '@snowpack/plugin-postcss',
+    '@snowpack/plugin-sass',
   ],
   // buildOptions: {
   //   // out: 'build', // 최종 빌드를 출력하는 로컬 디렉토리 이름

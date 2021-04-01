@@ -7,7 +7,7 @@ function App() {
   return (
     <div className={styles.App}>
       Hello, Minung!
-      <div>
+      <div className="mt-1">
         {count}
         <button onClick={handleButtonClick}>Count up</button>
       </div>
